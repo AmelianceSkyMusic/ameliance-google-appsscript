@@ -20,7 +20,8 @@ export async function doGet({
 	if (type) URLParams.append('type', type);
 
 	try {
-		const response = await fetch(`${baseURL}?${URLParams}`);
+		const requestUrl = baseURL || process.env.GOOGLE_APPS_SCRIPT_URL;
+		const response = await fetch(`${requestUrl}?${URLParams}`);
 		const textData = await response.text();
 		const data = await JSON.parse(textData);
 		if (data.status !== 'success') throw new Error(data.error);

@@ -13,6 +13,7 @@
 		"moduleResolution": "Node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
+		"types": ["node"],
 		"outDir": "dist",
 		"declaration": true
 	}
