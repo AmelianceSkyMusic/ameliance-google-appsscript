@@ -10,4 +10,5 @@ export default defineConfig({
 	minify: true,
 	target: 'esnext',
 	outDir: 'dist',
+	external: ['dotenv', 'dotenv/config'],
 });

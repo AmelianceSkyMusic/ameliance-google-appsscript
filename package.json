@@ -19,7 +19,6 @@
 		"build": "tsup",
 		"test": "jest",
 		"local-publish": "npm link && npm link ameliance-google-appsscript",
-		"lint": "next lint",
 		"demo": "npx ts-node demo/src/index"
 	},
 	"repository": {
